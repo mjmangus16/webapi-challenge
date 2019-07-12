@@ -26,13 +26,24 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+Express is a routing and middleware web framework that makes creating API requests easier.
+Express can be used to make your code cleaner by breaking it into different sections with Express Router.
+
 - [ ] Describe Middleware?
+
+Middleware is a function that runs before the main part of the request is ran. Middleware is used to check or change data before it gets passed through the request.
 
 - [ ] Describe a Resource?
 
+An NPM module???
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+A status code.
+
 - [ ] How can we partition our application into sub-applications?
+
+You can break your requests into different files by using express router.
 
 ## Project Setup
 
