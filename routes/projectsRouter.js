@@ -4,6 +4,12 @@ const router = express.Router();
 
 const Projects = require("../data/helpers/projectModel");
 
+router.get("/", (req, res) => {
+  Projects.get().then(projects => {
+    res.status(200).json(projects);
+  });
+});
+
 router.get("/:id", (req, res) => {
   const { id } = req.params;
 

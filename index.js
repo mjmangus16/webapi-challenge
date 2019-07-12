@@ -18,13 +18,12 @@ const express = require("express");
 const actionsRouter = require("./routes/actionsRouter");
 const projectsRouter = require("./routes/projectsRouter");
 
+var cors = require("cors");
+
 const server = express();
 
 server.use(express.json());
-
-server.get("/", (req, res) => {
-  res.send(`<h2>Let's write some middleware!</h2>`);
-});
+server.use(cors());
 
 server.use("/actions", actionsRouter);
 server.use("/projects", projectsRouter);
